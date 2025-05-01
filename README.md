@@ -7,7 +7,7 @@
 3. `b14_pattern_pscan.v` - Test vectors in binary format
 4. `synthesis_pscan.tcl` - Script for partial scan synthesis with Design Vision
 5. `tmax_pscan.tcl` - Script for running TetraMax
-6. `[fang].pdf` - Project report with design exploration and analysis
+6
 
 ## How to Run the Scripts
 
