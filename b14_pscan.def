@@ -1,0 +1,107 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN b14 ;
+
+SCANCHAINS 2 ;
+
+- chain1
++ START PIN SERIAL_IN1
++ FLOATING IR_reg_0_ ( IN SI ) ( OUT QN )
+           IR_reg_1_ ( IN SI ) ( OUT QN )
+           IR_reg_2_ ( IN SI ) ( OUT QN )
+           IR_reg_3_ ( IN SI ) ( OUT QN )
+           IR_reg_4_ ( IN SI ) ( OUT QN )
+           IR_reg_5_ ( IN SI ) ( OUT QN )
+           IR_reg_6_ ( IN SI ) ( OUT QN )
+           IR_reg_7_ ( IN SI ) ( OUT QN )
+           IR_reg_8_ ( IN SI ) ( OUT QN )
+           IR_reg_9_ ( IN SI ) ( OUT QN )
+           IR_reg_10_ ( IN SI ) ( OUT QN )
+           IR_reg_11_ ( IN SI ) ( OUT QN )
+           IR_reg_12_ ( IN SI ) ( OUT QN )
+           IR_reg_13_ ( IN SI ) ( OUT QN )
+           IR_reg_14_ ( IN SI ) ( OUT QN )
+           IR_reg_15_ ( IN SI ) ( OUT QN )
+           IR_reg_16_ ( IN SI ) ( OUT QN )
+           IR_reg_17_ ( IN SI ) ( OUT QN )
+           IR_reg_18_ ( IN SI ) ( OUT QN )
+           IR_reg_19_ ( IN SI ) ( OUT QN )
+           IR_reg_20_ ( IN SI ) ( OUT QN )
+           IR_reg_21_ ( IN SI ) ( OUT QN )
+           IR_reg_22_ ( IN SI ) ( OUT QN )
+           IR_reg_23_ ( IN SI ) ( OUT QN )
+           IR_reg_24_ ( IN SI ) ( OUT QN )
+           IR_reg_25_ ( IN SI ) ( OUT QN )
+           IR_reg_26_ ( IN SI ) ( OUT QN )
+           IR_reg_27_ ( IN SI ) ( OUT QN )
+           IR_reg_28_ ( IN SI ) ( OUT QN )
+           IR_reg_29_ ( IN SI ) ( OUT QN )
+           IR_reg_30_ ( IN SI ) ( OUT QN )
+           IR_reg_31_ ( IN SI ) ( OUT QN )
+           addr_reg_0_ ( IN SI ) ( OUT QN )
+           addr_reg_1_ ( IN SI ) ( OUT QN )
+           addr_reg_2_ ( IN SI ) ( OUT QN )
+           addr_reg_3_ ( IN SI ) ( OUT QN )
+           addr_reg_4_ ( IN SI ) ( OUT QN )
+           addr_reg_5_ ( IN SI ) ( OUT QN )
+           addr_reg_6_ ( IN SI ) ( OUT QN )
+           addr_reg_7_ ( IN SI ) ( OUT QN )
+           addr_reg_8_ ( IN SI ) ( OUT QN )
+           addr_reg_9_ ( IN SI ) ( OUT QN )
+           addr_reg_10_ ( IN SI ) ( OUT Q )
++ PARTITION clock_45_45
++ STOP PIN SERIAL_OUT1 ;
+
+- chain2
++ START PIN SERIAL_IN2
++ FLOATING addr_reg_11_ ( IN SI ) ( OUT QN )
+           addr_reg_12_ ( IN SI ) ( OUT QN )
+           addr_reg_13_ ( IN SI ) ( OUT QN )
+           addr_reg_14_ ( IN SI ) ( OUT QN )
+           addr_reg_15_ ( IN SI ) ( OUT QN )
+           addr_reg_16_ ( IN SI ) ( OUT QN )
+           addr_reg_17_ ( IN SI ) ( OUT QN )
+           addr_reg_18_ ( IN SI ) ( OUT QN )
+           addr_reg_19_ ( IN SI ) ( OUT QN )
+           datao_reg_0_ ( IN SI ) ( OUT QN )
+           datao_reg_1_ ( IN SI ) ( OUT QN )
+           datao_reg_2_ ( IN SI ) ( OUT QN )
+           datao_reg_3_ ( IN SI ) ( OUT QN )
+           datao_reg_4_ ( IN SI ) ( OUT QN )
+           datao_reg_5_ ( IN SI ) ( OUT QN )
+           datao_reg_6_ ( IN SI ) ( OUT QN )
+           datao_reg_7_ ( IN SI ) ( OUT QN )
+           datao_reg_8_ ( IN SI ) ( OUT QN )
+           datao_reg_9_ ( IN SI ) ( OUT QN )
+           datao_reg_10_ ( IN SI ) ( OUT QN )
+           datao_reg_11_ ( IN SI ) ( OUT QN )
+           datao_reg_12_ ( IN SI ) ( OUT QN )
+           datao_reg_13_ ( IN SI ) ( OUT QN )
+           datao_reg_14_ ( IN SI ) ( OUT QN )
+           datao_reg_15_ ( IN SI ) ( OUT QN )
+           datao_reg_16_ ( IN SI ) ( OUT QN )
+           datao_reg_17_ ( IN SI ) ( OUT QN )
+           datao_reg_18_ ( IN SI ) ( OUT QN )
+           datao_reg_19_ ( IN SI ) ( OUT QN )
+           datao_reg_20_ ( IN SI ) ( OUT QN )
+           datao_reg_21_ ( IN SI ) ( OUT QN )
+           datao_reg_22_ ( IN SI ) ( OUT QN )
+           datao_reg_23_ ( IN SI ) ( OUT QN )
+           datao_reg_24_ ( IN SI ) ( OUT QN )
+           datao_reg_25_ ( IN SI ) ( OUT QN )
+           datao_reg_26_ ( IN SI ) ( OUT QN )
+           datao_reg_27_ ( IN SI ) ( OUT QN )
+           datao_reg_28_ ( IN SI ) ( OUT QN )
+           datao_reg_29_ ( IN SI ) ( OUT QN )
+           datao_reg_30_ ( IN SI ) ( OUT QN )
+           rd_reg ( IN SI ) ( OUT QN )
+           state_reg ( IN SI ) ( OUT QN )
+           wr_reg ( IN SI ) ( OUT Q )
++ PARTITION clock_45_45
++ STOP PIN SERIAL_OUT2 ;
+
+END SCANCHAINS
+
+END DESIGN
